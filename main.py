@@ -17,8 +17,12 @@ def main():
 
     print("--- End report ---")
 
+
+
+
 def sort_on(d):
     return d["num"]
+
 
 def get_book_text(path):
     with open(path) as f:
@@ -39,6 +43,7 @@ def get_chars_dict(text):
         else:
             chars[lowercased] = 1
     return chars
+
 
 def chars_dict_to_sorted_list(num_chars_dict):
     sorted_list = []
